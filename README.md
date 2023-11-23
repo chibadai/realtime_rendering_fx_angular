@@ -1,0 +1,2 @@
+# realtime_rendering_fx_angular
+簡単なレンダリングシステムを作成する。データの更新はSubscribeをりようする。
