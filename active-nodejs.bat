@@ -1,0 +1,1 @@
+call ./../nodejs-path.bat
