@@ -1,12 +1,4 @@
-// import { Injectable } from '@angular/core';
 
-// @Injectable({
-//   providedIn: 'root'
-// })
-// export class SseService {
-
-//   constructor() { }
-// }
 import { Injectable, NgZone } from '@angular/core';
 import { Observable } from 'rxjs';
 

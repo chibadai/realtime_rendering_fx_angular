@@ -9,7 +9,6 @@ import { Subscription } from 'rxjs';
   template: `<div>...</div>`
 })
 export class AppComponent implements OnInit, OnDestroy {
-  // private sseSubscription: Subscription;
    private sseSubscription: Subscription= new Subscription()
 
   constructor(
@@ -18,8 +17,6 @@ export class AppComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit() {
-    // this.sseSubscription = this.sseService.getServerSentEvent('http://your-server-url/stream')
-    // this.sseSubscription = this.sseService.getServerSentEvent('http://127.0.0.1:5000/stream')
     // this.sseSubscription = this.http.get('http://127.0.0.1:5000/stream', { responseType: 'text' })
     this.sseSubscription = this.sseService.getServerSentEvent('http://127.0.0.1:5000/stream')
       .subscribe({
@@ -37,17 +34,3 @@ export class AppComponent implements OnInit, OnDestroy {
     }
   }
 }
-// import { Component } from '@angular/core';
-// import { CommonModule } from '@angular/common';
-// import { RouterOutlet } from '@angular/router';
-
-// @Component({
-//   selector: 'app-root',
-//   standalone: true,
-//   imports: [CommonModule, RouterOutlet],
-//   templateUrl: './app.component.html',
-//   styleUrl: './app.component.sass'
-// })
-// export class AppComponent {
-//   title = 'rendering-app';
-// }
